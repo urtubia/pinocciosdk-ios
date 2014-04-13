@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8C84F8218FA480C00305F01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C84F8118FA480C00305F01 /* Foundation.framework */; };
+		D8C84F8718FA480C00305F01 /* PinoccioSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D8C84F8618FA480C00305F01 /* PinoccioSDK.h */; };
+		D8C84F8918FA480C00305F01 /* PinoccioSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C84F8818FA480C00305F01 /* PinoccioSDK.m */; };
+		D8C84F9018FA480C00305F01 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C84F8F18FA480C00305F01 /* XCTest.framework */; };
+		D8C84F9118FA480C00305F01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C84F8118FA480C00305F01 /* Foundation.framework */; };
+		D8C84F9318FA480C00305F01 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C84F9218FA480C00305F01 /* UIKit.framework */; };
+		D8C84F9618FA480C00305F01 /* libPinoccioSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C84F7E18FA480C00305F01 /* libPinoccioSDK.a */; };
+		D8C84F9C18FA480C00305F01 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8C84F9A18FA480C00305F01 /* InfoPlist.strings */; };
+		D8C84F9E18FA480C00305F01 /* PinoccioSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C84F9D18FA480C00305F01 /* PinoccioSDKTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8C84F9418FA480C00305F01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8C84F7618FA480C00305F01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8C84F7D18FA480C00305F01;
+			remoteInfo = PinoccioSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D8C84F7C18FA480C00305F01 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				D8C84F8718FA480C00305F01 /* PinoccioSDK.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D8C84F7E18FA480C00305F01 /* libPinoccioSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPinoccioSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8C84F8118FA480C00305F01 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D8C84F8518FA480C00305F01 /* PinoccioSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PinoccioSDK-Prefix.pch"; sourceTree = "<group>"; };
+		D8C84F8618FA480C00305F01 /* PinoccioSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PinoccioSDK.h; sourceTree = "<group>"; };
+		D8C84F8818FA480C00305F01 /* PinoccioSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinoccioSDK.m; sourceTree = "<group>"; };
+		D8C84F8E18FA480C00305F01 /* PinoccioSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinoccioSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8C84F8F18FA480C00305F01 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D8C84F9218FA480C00305F01 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D8C84F9918FA480C00305F01 /* PinoccioSDKTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PinoccioSDKTests-Info.plist"; sourceTree = "<group>"; };
+		D8C84F9B18FA480C00305F01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D8C84F9D18FA480C00305F01 /* PinoccioSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinoccioSDKTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8C84F7B18FA480C00305F01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C84F8218FA480C00305F01 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8C84F8B18FA480C00305F01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C84F9618FA480C00305F01 /* libPinoccioSDK.a in Frameworks */,
+				D8C84F9018FA480C00305F01 /* XCTest.framework in Frameworks */,
+				D8C84F9318FA480C00305F01 /* UIKit.framework in Frameworks */,
+				D8C84F9118FA480C00305F01 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8C84F7518FA480C00305F01 = {
+			isa = PBXGroup;
+			children = (
+				D8C84F8318FA480C00305F01 /* PinoccioSDK */,
+				D8C84F9718FA480C00305F01 /* PinoccioSDKTests */,
+				D8C84F8018FA480C00305F01 /* Frameworks */,
+				D8C84F7F18FA480C00305F01 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8C84F7F18FA480C00305F01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8C84F7E18FA480C00305F01 /* libPinoccioSDK.a */,
+				D8C84F8E18FA480C00305F01 /* PinoccioSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8C84F8018FA480C00305F01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8C84F8118FA480C00305F01 /* Foundation.framework */,
+				D8C84F8F18FA480C00305F01 /* XCTest.framework */,
+				D8C84F9218FA480C00305F01 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8C84F8318FA480C00305F01 /* PinoccioSDK */ = {
+			isa = PBXGroup;
+			children = (
+				D8C84F8618FA480C00305F01 /* PinoccioSDK.h */,
+				D8C84F8818FA480C00305F01 /* PinoccioSDK.m */,
+				D8C84F8418FA480C00305F01 /* Supporting Files */,
+			);
+			path = PinoccioSDK;
+			sourceTree = "<group>";
+		};
+		D8C84F8418FA480C00305F01 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8C84F8518FA480C00305F01 /* PinoccioSDK-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8C84F9718FA480C00305F01 /* PinoccioSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				D8C84F9D18FA480C00305F01 /* PinoccioSDKTests.m */,
+				D8C84F9818FA480C00305F01 /* Supporting Files */,
+			);
+			path = PinoccioSDKTests;
+			sourceTree = "<group>";
+		};
+		D8C84F9818FA480C00305F01 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8C84F9918FA480C00305F01 /* PinoccioSDKTests-Info.plist */,
+				D8C84F9A18FA480C00305F01 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8C84F7D18FA480C00305F01 /* PinoccioSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8C84FA118FA480C00305F01 /* Build configuration list for PBXNativeTarget "PinoccioSDK" */;
+			buildPhases = (
+				D8C84F7A18FA480C00305F01 /* Sources */,
+				D8C84F7B18FA480C00305F01 /* Frameworks */,
+				D8C84F7C18FA480C00305F01 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PinoccioSDK;
+			productName = PinoccioSDK;
+			productReference = D8C84F7E18FA480C00305F01 /* libPinoccioSDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D8C84F8D18FA480C00305F01 /* PinoccioSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8C84FA418FA480C00305F01 /* Build configuration list for PBXNativeTarget "PinoccioSDKTests" */;
+			buildPhases = (
+				D8C84F8A18FA480C00305F01 /* Sources */,
+				D8C84F8B18FA480C00305F01 /* Frameworks */,
+				D8C84F8C18FA480C00305F01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8C84F9518FA480C00305F01 /* PBXTargetDependency */,
+			);
+			name = PinoccioSDKTests;
+			productName = PinoccioSDKTests;
+			productReference = D8C84F8E18FA480C00305F01 /* PinoccioSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8C84F7618FA480C00305F01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Big Robot Studios, LLC";
+			};
+			buildConfigurationList = D8C84F7918FA480C00305F01 /* Build configuration list for PBXProject "PinoccioSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D8C84F7518FA480C00305F01;
+			productRefGroup = D8C84F7F18FA480C00305F01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8C84F7D18FA480C00305F01 /* PinoccioSDK */,
+				D8C84F8D18FA480C00305F01 /* PinoccioSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8C84F8C18FA480C00305F01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C84F9C18FA480C00305F01 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8C84F7A18FA480C00305F01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C84F8918FA480C00305F01 /* PinoccioSDK.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8C84F8A18FA480C00305F01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C84F9E18FA480C00305F01 /* PinoccioSDKTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8C84F9518FA480C00305F01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8C84F7D18FA480C00305F01 /* PinoccioSDK */;
+			targetProxy = D8C84F9418FA480C00305F01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D8C84F9A18FA480C00305F01 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8C84F9B18FA480C00305F01 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8C84F9F18FA480C00305F01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D8C84FA018FA480C00305F01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8C84FA218FA480C00305F01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/PinoccioSDK.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PinoccioSDK/PinoccioSDK-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D8C84FA318FA480C00305F01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/PinoccioSDK.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PinoccioSDK/PinoccioSDK-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D8C84FA518FA480C00305F01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PinoccioSDK/PinoccioSDK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PinoccioSDKTests/PinoccioSDKTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D8C84FA618FA480C00305F01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PinoccioSDK/PinoccioSDK-Prefix.pch";
+				INFOPLIST_FILE = "PinoccioSDKTests/PinoccioSDKTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8C84F7918FA480C00305F01 /* Build configuration list for PBXProject "PinoccioSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8C84F9F18FA480C00305F01 /* Debug */,
+				D8C84FA018FA480C00305F01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8C84FA118FA480C00305F01 /* Build configuration list for PBXNativeTarget "PinoccioSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8C84FA218FA480C00305F01 /* Debug */,
+				D8C84FA318FA480C00305F01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D8C84FA418FA480C00305F01 /* Build configuration list for PBXNativeTarget "PinoccioSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8C84FA518FA480C00305F01 /* Debug */,
+				D8C84FA618FA480C00305F01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8C84F7618FA480C00305F01 /* Project object */;
+}
