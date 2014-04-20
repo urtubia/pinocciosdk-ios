@@ -30,7 +30,6 @@
 		D8C84F9618FA480C00305F01 /* libPinoccioSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C84F7E18FA480C00305F01 /* libPinoccioSDK.a */; };
 		D8C84F9C18FA480C00305F01 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8C84F9A18FA480C00305F01 /* InfoPlist.strings */; };
 		D8C84F9E18FA480C00305F01 /* PinoccioSDKFunctionalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C84F9D18FA480C00305F01 /* PinoccioSDKFunctionalTests.m */; };
-		D8C84FB118FB55BA00305F01 /* BRSRestClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C84FB018FB55BA00305F01 /* BRSRestClient.m */; };
 		D8C84FB918FBE87900305F01 /* XCTestCase+AsyncTesting.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C84FB818FBE87900305F01 /* XCTestCase+AsyncTesting.m */; };
 /* End PBXBuildFile section */
 
@@ -69,8 +68,6 @@
 		D8C84F9918FA480C00305F01 /* PinoccioSDKTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PinoccioSDKTests-Info.plist"; sourceTree = "<group>"; };
 		D8C84F9B18FA480C00305F01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D8C84F9D18FA480C00305F01 /* PinoccioSDKFunctionalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinoccioSDKFunctionalTests.m; sourceTree = "<group>"; };
-		D8C84FAF18FB55BA00305F01 /* BRSRestClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRSRestClient.h; sourceTree = "<group>"; };
-		D8C84FB018FB55BA00305F01 /* BRSRestClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRSRestClient.m; sourceTree = "<group>"; };
 		D8C84FB718FBE87900305F01 /* XCTestCase+AsyncTesting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XCTestCase+AsyncTesting.h"; sourceTree = "<group>"; };
 		D8C84FB818FBE87900305F01 /* XCTestCase+AsyncTesting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XCTestCase+AsyncTesting.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,8 +130,6 @@
 				D8C84F8418FA480C00305F01 /* Supporting Files */,
 				D8C84F8618FA480C00305F01 /* PinoccioSDK.h */,
 				D8C84F8818FA480C00305F01 /* PinoccioSDK.m */,
-				D8C84FAF18FB55BA00305F01 /* BRSRestClient.h */,
-				D8C84FB018FB55BA00305F01 /* BRSRestClient.m */,
 			);
 			path = PinoccioSDK;
 			sourceTree = "<group>";
@@ -265,7 +260,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8C84FB118FB55BA00305F01 /* BRSRestClient.m in Sources */,
 				D8C84F8918FA480C00305F01 /* PinoccioSDK.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
