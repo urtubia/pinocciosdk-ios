@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		D8C84FA718FA5F0100305F01 /* PinoccioSDKUniversal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D8C84FA818FA5F0100305F01 /* Build configuration list for PBXAggregateTarget "PinoccioSDKUniversal" */;
+			buildPhases = (
+				D8C84FAB18FA5F0D00305F01 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = PinoccioSDKUniversal;
+			productName = PinoccioSDKUniversal;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		D8C84F8218FA480C00305F01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C84F8118FA480C00305F01 /* Foundation.framework */; };
 		D8C84F8718FA480C00305F01 /* PinoccioSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D8C84F8618FA480C00305F01 /* PinoccioSDK.h */; };
@@ -15,7 +29,9 @@
 		D8C84F9318FA480C00305F01 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C84F9218FA480C00305F01 /* UIKit.framework */; };
 		D8C84F9618FA480C00305F01 /* libPinoccioSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C84F7E18FA480C00305F01 /* libPinoccioSDK.a */; };
 		D8C84F9C18FA480C00305F01 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8C84F9A18FA480C00305F01 /* InfoPlist.strings */; };
-		D8C84F9E18FA480C00305F01 /* PinoccioSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C84F9D18FA480C00305F01 /* PinoccioSDKTests.m */; };
+		D8C84F9E18FA480C00305F01 /* PinoccioSDKFunctionalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C84F9D18FA480C00305F01 /* PinoccioSDKFunctionalTests.m */; };
+		D8C84FB118FB55BA00305F01 /* BRSRestClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C84FB018FB55BA00305F01 /* BRSRestClient.m */; };
+		D8C84FB918FBE87900305F01 /* XCTestCase+AsyncTesting.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C84FB818FBE87900305F01 /* XCTestCase+AsyncTesting.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +68,11 @@
 		D8C84F9218FA480C00305F01 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		D8C84F9918FA480C00305F01 /* PinoccioSDKTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PinoccioSDKTests-Info.plist"; sourceTree = "<group>"; };
 		D8C84F9B18FA480C00305F01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D8C84F9D18FA480C00305F01 /* PinoccioSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinoccioSDKTests.m; sourceTree = "<group>"; };
+		D8C84F9D18FA480C00305F01 /* PinoccioSDKFunctionalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinoccioSDKFunctionalTests.m; sourceTree = "<group>"; };
+		D8C84FAF18FB55BA00305F01 /* BRSRestClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRSRestClient.h; sourceTree = "<group>"; };
+		D8C84FB018FB55BA00305F01 /* BRSRestClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRSRestClient.m; sourceTree = "<group>"; };
+		D8C84FB718FBE87900305F01 /* XCTestCase+AsyncTesting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XCTestCase+AsyncTesting.h"; sourceTree = "<group>"; };
+		D8C84FB818FBE87900305F01 /* XCTestCase+AsyncTesting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XCTestCase+AsyncTesting.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,9 +130,11 @@
 		D8C84F8318FA480C00305F01 /* PinoccioSDK */ = {
 			isa = PBXGroup;
 			children = (
+				D8C84F8418FA480C00305F01 /* Supporting Files */,
 				D8C84F8618FA480C00305F01 /* PinoccioSDK.h */,
 				D8C84F8818FA480C00305F01 /* PinoccioSDK.m */,
-				D8C84F8418FA480C00305F01 /* Supporting Files */,
+				D8C84FAF18FB55BA00305F01 /* BRSRestClient.h */,
+				D8C84FB018FB55BA00305F01 /* BRSRestClient.m */,
 			);
 			path = PinoccioSDK;
 			sourceTree = "<group>";
@@ -128,8 +150,10 @@
 		D8C84F9718FA480C00305F01 /* PinoccioSDKTests */ = {
 			isa = PBXGroup;
 			children = (
-				D8C84F9D18FA480C00305F01 /* PinoccioSDKTests.m */,
 				D8C84F9818FA480C00305F01 /* Supporting Files */,
+				D8C84F9D18FA480C00305F01 /* PinoccioSDKFunctionalTests.m */,
+				D8C84FB718FBE87900305F01 /* XCTestCase+AsyncTesting.h */,
+				D8C84FB818FBE87900305F01 /* XCTestCase+AsyncTesting.m */,
 			);
 			path = PinoccioSDKTests;
 			sourceTree = "<group>";
@@ -204,6 +228,7 @@
 			targets = (
 				D8C84F7D18FA480C00305F01 /* PinoccioSDK */,
 				D8C84F8D18FA480C00305F01 /* PinoccioSDKTests */,
+				D8C84FA718FA5F0100305F01 /* PinoccioSDKUniversal */,
 			);
 		};
 /* End PBXProject section */
@@ -219,11 +244,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D8C84FAB18FA5F0D00305F01 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target {PROJECT_NAME} ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\"\nBUILD_ROOT=\"${BUILD_ROOT}\" xcodebuild -target {PROJECT_NAME} -configuration ${CONFIGURATION} -sdk iphonesimulator -arch i386 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\"\n\n# Last touch. copy the header files. Just for convenience\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUTFOLDER}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D8C84F7A18FA480C00305F01 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8C84FB118FB55BA00305F01 /* BRSRestClient.m in Sources */,
 				D8C84F8918FA480C00305F01 /* PinoccioSDK.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,7 +274,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8C84F9E18FA480C00305F01 /* PinoccioSDKTests.m in Sources */,
+				D8C84FB918FBE87900305F01 /* XCTestCase+AsyncTesting.m in Sources */,
+				D8C84F9E18FA480C00305F01 /* PinoccioSDKFunctionalTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +429,20 @@
 			};
 			name = Release;
 		};
+		D8C84FA918FA5F0100305F01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D8C84FAA18FA5F0100305F01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -405,6 +462,7 @@
 				D8C84FA318FA480C00305F01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8C84FA418FA480C00305F01 /* Build configuration list for PBXNativeTarget "PinoccioSDKTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +471,16 @@
 				D8C84FA618FA480C00305F01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8C84FA818FA5F0100305F01 /* Build configuration list for PBXAggregateTarget "PinoccioSDKUniversal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8C84FA918FA5F0100305F01 /* Debug */,
+				D8C84FAA18FA5F0100305F01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

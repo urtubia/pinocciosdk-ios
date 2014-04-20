@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>PinoccioSDKUniversal.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>D8C84F8D18FA480C00305F01</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D8C84FA718FA5F0100305F01</key>
 		<dict>
 			<key>primary</key>
 			<true/>
