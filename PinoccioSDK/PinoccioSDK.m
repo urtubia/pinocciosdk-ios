@@ -8,6 +8,113 @@
 
 #import "PinoccioSDK.h"
 #import "BRSRestClient.h"
+@interface BRSRestClientResponse : NSObject
+@property (nonatomic, readonly) NSString* text;
+@property (nonatomic, readonly) NSObject* json;
+@property (nonatomic, readonly) NSError* error;
+@property (nonatomic, readonly) int statusCode;
+@end
+
+@interface BRSRestClient : NSObject
+-(id) initWithURLString:(NSString*) urlString;
+-(void) get:(void(^)(BRSRestClientResponse*)) predicate;
+-(void) post:(void(^)(BRSRestClientResponse*)) predicate;
+/*
+ TODO
+ -(void) put:(void(^)(BRSRestClientResponse*)) predicate;
+ -(void) delete:(void(^)(BRSRestClientResponse*)) predicate;
+ -(void) update:(void(^)(BRSRestClientResponse*)) predicate;
+ -(void) patch:(void(^)(BRSRestClientResponse*)) predicate;
+ */
+@property (nonatomic, copy) NSObject* jsonData;
+@property (nonatomic, readonly) NSString* urlString;
+
+@end
+
+@interface BRSRestClientResponse()
+-(void) setText:(NSString*) text;
+-(void) setStatusCode:(int) statusCode;
+@end
+
+@implementation BRSRestClientResponse
+-(void) setText:(NSString *)text
+{
+    _text = text;
+    // TODO: if it can be converted to JSON, do it.
+}
+
+-(void) setStatusCode:(int)statusCode
+{
+    _statusCode = statusCode;
+}
+@end
+
+@interface BRSRestClient()
+
+@end
+
+@implementation BRSRestClient
+
+-(id) initWithURLString:(NSString *)urlString
+{
+    if(self = [super init]){
+        _urlString = urlString;
+    }
+    return self;
+}
+
+-(void) setJsonData:(NSObject *)jsonData {
+    _jsonData = jsonData;
+}
+
+-(void) get:(void (^)(BRSRestClientResponse *))predicate
+{
+    NSURL *url = [NSURL URLWithString: _urlString];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    [request setHTTPMethod:@"GET"];
+    NSHTTPURLResponse* urlResponse = nil;
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *responseData, NSError *connectionError) {
+        BRSRestClientResponse *resp = [[BRSRestClientResponse alloc] init];
+        NSString *result = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+        [resp setText:result];
+        [resp setStatusCode:[urlResponse statusCode]];
+        predicate(resp);
+    }];
+}
+
+-(void) post:(void (^)(BRSRestClientResponse *))predicate
+{
+    NSURL *url = [NSURL URLWithString: _urlString];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    [request setHTTPMethod:@"POST"];
+    NSError *jsonError = nil;
+    NSData *jsonDataToUpload = nil;
+    if(self.jsonData != nil){
+        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self.jsonData options:0 error:&jsonError];
+        NSString *jsonDataString = [[NSString alloc] initWithData:jsonData encoding:NSASCIIStringEncoding];
+        jsonDataToUpload = [jsonDataString dataUsingEncoding:NSASCIIStringEncoding];
+    }
+    if(jsonError == nil){
+        if(jsonDataToUpload != nil){
+            [request setValue:[NSString stringWithFormat:@"%d", [jsonDataToUpload length]] forHTTPHeaderField:@"Content-Length"];
+            [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+            [request setHTTPBody:jsonDataToUpload];
+        }
+        NSHTTPURLResponse* urlResponse = nil;
+        [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *responseData, NSError *connectionError) {
+            BRSRestClientResponse *resp = [[BRSRestClientResponse alloc] init];
+            NSString *result = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+            [resp setText:result];
+            [resp setStatusCode:[urlResponse statusCode]];
+            predicate(resp);
+        }];
+    }
+}
+
+
+@end
+
+
 
 @interface PinoccioSDKConfig : NSObject
 

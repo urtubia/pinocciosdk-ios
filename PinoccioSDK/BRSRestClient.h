@@ -8,25 +8,3 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BRSRestClientResponse : NSObject
-@property (nonatomic, readonly) NSString* text;
-@property (nonatomic, readonly) NSObject* json;
-@property (nonatomic, readonly) NSError* error;
-@property (nonatomic, readonly) int statusCode;
-@end
-
-@interface BRSRestClient : NSObject
--(id) initWithURLString:(NSString*) urlString;
--(void) get:(void(^)(BRSRestClientResponse*)) predicate;
--(void) post:(void(^)(BRSRestClientResponse*)) predicate;
-/*
- TODO
--(void) put:(void(^)(BRSRestClientResponse*)) predicate;
--(void) delete:(void(^)(BRSRestClientResponse*)) predicate;
--(void) update:(void(^)(BRSRestClientResponse*)) predicate;
--(void) patch:(void(^)(BRSRestClientResponse*)) predicate;
-*/
-@property (nonatomic, copy) NSObject* jsonData;
-@property (nonatomic, readonly) NSString* urlString;
-
-@end
