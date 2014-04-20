@@ -138,8 +138,8 @@
 {
     [PinoccioSDK login:self.validEmail password:self.validPassword response:^(PinoccioSDK *response) {
         if(response != nil){
-            PinoccioSDK *sdk = response;
-            [sdk getTroops:^(NSArray *troops) {
+            PinoccioSDK *pinoccioSdk = response;
+            [pinoccioSdk getTroops:^(NSArray *troops) {
                 if([troops count] < 1){
                     XCTFail(@"No troops found");
                 }
@@ -147,12 +147,12 @@
                     NSLog(@"%@", troop[@"name"]);
                     if([self.validTroopName isEqualToString:troop[@"name"]]){
                         NSString *troop_id = troop[@"id"];
-                        [sdk getScoutsInTroop:troop_id scoutsPredicate:^(NSArray *scouts) {
+                        [pinoccioSdk getScoutsInTroop:troop_id scoutsPredicate:^(NSArray *scouts) {
                             
                             for(NSDictionary *scout in scouts){
                                 NSLog(@"%@", scout[@"name"]);
                                 if([self.validScoutName isEqualToString:scout[@"name"]]){
-                                    [sdk runBitlashCommand:troop_id scoutId:scout[@"id"] command:@"led.blink(0,0,255,1000)" responsePredicate:^(NSDictionary *response) {
+                                    [pinoccioSdk runBitlashCommand:troop_id scoutId:scout[@"id"] command:@"led.blink(0,0,255,1000)" responsePredicate:^(NSDictionary *response) {
                                         if(response[@"data"] != nil){
                                            [self notify:XCTAsyncTestCaseStatusSucceeded];
                                         }else{
