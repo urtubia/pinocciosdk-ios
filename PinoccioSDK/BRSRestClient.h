@@ -20,6 +20,7 @@
 -(void) get:(void(^)(BRSRestClientResponse*)) predicate;
 -(void) post:(void(^)(BRSRestClientResponse*)) predicate;
 /*
+ TODO
 -(void) put:(void(^)(BRSRestClientResponse*)) predicate;
 -(void) delete:(void(^)(BRSRestClientResponse*)) predicate;
 -(void) update:(void(^)(BRSRestClientResponse*)) predicate;
