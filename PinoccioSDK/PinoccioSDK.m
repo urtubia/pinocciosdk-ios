@@ -9,11 +9,6 @@
 #import "PinoccioSDK.h"
 #import "BRSRestClient.h"
 
-
-@implementation PinoccioSDKResponse
-
-@end
-
 @interface PinoccioSDKConfig : NSObject
 
 @property (readonly) NSString* apiBaseUrl;

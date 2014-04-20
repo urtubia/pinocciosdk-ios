@@ -11,10 +11,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface PinoccioSDKResponse : NSObject
-@end
-
-
 @interface PinoccioSDK : NSObject
 
 @property (readonly) NSString* token;
