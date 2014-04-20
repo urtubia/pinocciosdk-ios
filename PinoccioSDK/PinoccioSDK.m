@@ -7,7 +7,7 @@
 //
 
 #import "PinoccioSDK.h"
-#import "BRSRestClient.h"
+
 @interface BRSRestClientResponse : NSObject
 @property (nonatomic, readonly) NSString* text;
 @property (nonatomic, readonly) NSObject* json;
@@ -177,6 +177,16 @@
             response(nil);
         }
     }];
+}
+
+-(void) logout
+{
+    BRSRestClient *restClient = [[BRSRestClient alloc] initWithURLString:[NSString stringWithFormat:@"%@/logout?token=%@", _config.apiBaseUrl, self.token]];
+    [restClient get:^(BRSRestClientResponse *restClientResponse) {
+        _isLoggedIn = false;
+        _token = @"";
+    }];
+    
 }
 
 -(void) getTroops:(void (^)(NSArray *))troopsPredicate
