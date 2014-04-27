@@ -21,6 +21,25 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		D87A56C9190A154D00D6A9F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C84F8118FA480C00305F01 /* Foundation.framework */; };
+		D87A56CB190A154E00D6A9F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87A56CA190A154E00D6A9F7 /* CoreGraphics.framework */; };
+		D87A56CC190A154E00D6A9F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C84F9218FA480C00305F01 /* UIKit.framework */; };
+		D87A56D2190A154E00D6A9F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D87A56D0190A154E00D6A9F7 /* InfoPlist.strings */; };
+		D87A56D4190A154E00D6A9F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D87A56D3190A154E00D6A9F7 /* main.m */; };
+		D87A56D8190A154E00D6A9F7 /* BRSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D87A56D7190A154E00D6A9F7 /* BRSAppDelegate.m */; };
+		D87A56DB190A154E00D6A9F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D87A56D9190A154E00D6A9F7 /* Main.storyboard */; };
+		D87A56DE190A154E00D6A9F7 /* BRSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D87A56DD190A154E00D6A9F7 /* BRSViewController.m */; };
+		D87A56E0190A154E00D6A9F7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D87A56DF190A154E00D6A9F7 /* Images.xcassets */; };
+		D87A56E6190A154E00D6A9F7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C84F8F18FA480C00305F01 /* XCTest.framework */; };
+		D87A56E7190A154E00D6A9F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C84F8118FA480C00305F01 /* Foundation.framework */; };
+		D87A56E8190A154E00D6A9F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C84F9218FA480C00305F01 /* UIKit.framework */; };
+		D87A56F0190A154E00D6A9F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D87A56EE190A154E00D6A9F7 /* InfoPlist.strings */; };
+		D87A56F2190A154E00D6A9F7 /* PinoccioSDKExampleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D87A56F1190A154E00D6A9F7 /* PinoccioSDKExampleAppTests.m */; };
+		D87A56F9190C0AD200D6A9F7 /* PinoccioSDK.h in Sources */ = {isa = PBXBuildFile; fileRef = D8C84F8618FA480C00305F01 /* PinoccioSDK.h */; };
+		D87A56FA190C0AD200D6A9F7 /* PinoccioSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C84F8818FA480C00305F01 /* PinoccioSDK.m */; };
+		D87A56FD190C35B700D6A9F7 /* TroopsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D87A56FC190C35B700D6A9F7 /* TroopsTableViewController.m */; };
+		D87A5700190C4CEC00D6A9F7 /* ScoutsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D87A56FF190C4CEC00D6A9F7 /* ScoutsTableViewController.m */; };
+		D87A5703190C8C1700D6A9F7 /* ScoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D87A5702190C8C1700D6A9F7 /* ScoutViewController.m */; };
 		D8C84F8218FA480C00305F01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C84F8118FA480C00305F01 /* Foundation.framework */; };
 		D8C84F8718FA480C00305F01 /* PinoccioSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D8C84F8618FA480C00305F01 /* PinoccioSDK.h */; };
 		D8C84F8918FA480C00305F01 /* PinoccioSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C84F8818FA480C00305F01 /* PinoccioSDK.m */; };
@@ -34,6 +53,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D87A56E9190A154E00D6A9F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8C84F7618FA480C00305F01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D87A56C7190A154D00D6A9F7;
+			remoteInfo = PinoccioSDKExampleApp;
+		};
 		D8C84F9418FA480C00305F01 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D8C84F7618FA480C00305F01 /* Project object */;
@@ -57,6 +83,28 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D87A56C8190A154D00D6A9F7 /* PinoccioSDKExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinoccioSDKExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D87A56CA190A154E00D6A9F7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D87A56CF190A154E00D6A9F7 /* PinoccioSDKExampleApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PinoccioSDKExampleApp-Info.plist"; sourceTree = "<group>"; };
+		D87A56D1190A154E00D6A9F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D87A56D3190A154E00D6A9F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D87A56D5190A154E00D6A9F7 /* PinoccioSDKExampleApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PinoccioSDKExampleApp-Prefix.pch"; sourceTree = "<group>"; };
+		D87A56D6190A154E00D6A9F7 /* BRSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRSAppDelegate.h; sourceTree = "<group>"; };
+		D87A56D7190A154E00D6A9F7 /* BRSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRSAppDelegate.m; sourceTree = "<group>"; };
+		D87A56DA190A154E00D6A9F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D87A56DC190A154E00D6A9F7 /* BRSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRSViewController.h; sourceTree = "<group>"; };
+		D87A56DD190A154E00D6A9F7 /* BRSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRSViewController.m; sourceTree = "<group>"; };
+		D87A56DF190A154E00D6A9F7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D87A56E5190A154E00D6A9F7 /* PinoccioSDKExampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinoccioSDKExampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D87A56ED190A154E00D6A9F7 /* PinoccioSDKExampleAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PinoccioSDKExampleAppTests-Info.plist"; sourceTree = "<group>"; };
+		D87A56EF190A154E00D6A9F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D87A56F1190A154E00D6A9F7 /* PinoccioSDKExampleAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinoccioSDKExampleAppTests.m; sourceTree = "<group>"; };
+		D87A56FB190C35B700D6A9F7 /* TroopsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TroopsTableViewController.h; sourceTree = "<group>"; };
+		D87A56FC190C35B700D6A9F7 /* TroopsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TroopsTableViewController.m; sourceTree = "<group>"; };
+		D87A56FE190C4CEC00D6A9F7 /* ScoutsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoutsTableViewController.h; sourceTree = "<group>"; };
+		D87A56FF190C4CEC00D6A9F7 /* ScoutsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoutsTableViewController.m; sourceTree = "<group>"; };
+		D87A5701190C8C1700D6A9F7 /* ScoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoutViewController.h; sourceTree = "<group>"; };
+		D87A5702190C8C1700D6A9F7 /* ScoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoutViewController.m; sourceTree = "<group>"; };
 		D8C84F7E18FA480C00305F01 /* libPinoccioSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPinoccioSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C84F8118FA480C00305F01 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D8C84F8518FA480C00305F01 /* PinoccioSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PinoccioSDK-Prefix.pch"; sourceTree = "<group>"; };
@@ -73,6 +121,26 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D87A56C5190A154D00D6A9F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D87A56CB190A154E00D6A9F7 /* CoreGraphics.framework in Frameworks */,
+				D87A56CC190A154E00D6A9F7 /* UIKit.framework in Frameworks */,
+				D87A56C9190A154D00D6A9F7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D87A56E2190A154E00D6A9F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D87A56E6190A154E00D6A9F7 /* XCTest.framework in Frameworks */,
+				D87A56E8190A154E00D6A9F7 /* UIKit.framework in Frameworks */,
+				D87A56E7190A154E00D6A9F7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D8C84F7B18FA480C00305F01 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,11 +163,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D87A56CD190A154E00D6A9F7 /* PinoccioSDKExampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				D87A56D6190A154E00D6A9F7 /* BRSAppDelegate.h */,
+				D87A56D7190A154E00D6A9F7 /* BRSAppDelegate.m */,
+				D87A56D9190A154E00D6A9F7 /* Main.storyboard */,
+				D87A56DC190A154E00D6A9F7 /* BRSViewController.h */,
+				D87A56DD190A154E00D6A9F7 /* BRSViewController.m */,
+				D87A56DF190A154E00D6A9F7 /* Images.xcassets */,
+				D87A56CE190A154E00D6A9F7 /* Supporting Files */,
+				D87A56FB190C35B700D6A9F7 /* TroopsTableViewController.h */,
+				D87A56FC190C35B700D6A9F7 /* TroopsTableViewController.m */,
+				D87A56FE190C4CEC00D6A9F7 /* ScoutsTableViewController.h */,
+				D87A56FF190C4CEC00D6A9F7 /* ScoutsTableViewController.m */,
+				D87A5701190C8C1700D6A9F7 /* ScoutViewController.h */,
+				D87A5702190C8C1700D6A9F7 /* ScoutViewController.m */,
+			);
+			path = PinoccioSDKExampleApp;
+			sourceTree = "<group>";
+		};
+		D87A56CE190A154E00D6A9F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D87A56CF190A154E00D6A9F7 /* PinoccioSDKExampleApp-Info.plist */,
+				D87A56D0190A154E00D6A9F7 /* InfoPlist.strings */,
+				D87A56D3190A154E00D6A9F7 /* main.m */,
+				D87A56D5190A154E00D6A9F7 /* PinoccioSDKExampleApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D87A56EB190A154E00D6A9F7 /* PinoccioSDKExampleAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				D87A56F1190A154E00D6A9F7 /* PinoccioSDKExampleAppTests.m */,
+				D87A56EC190A154E00D6A9F7 /* Supporting Files */,
+			);
+			path = PinoccioSDKExampleAppTests;
+			sourceTree = "<group>";
+		};
+		D87A56EC190A154E00D6A9F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D87A56ED190A154E00D6A9F7 /* PinoccioSDKExampleAppTests-Info.plist */,
+				D87A56EE190A154E00D6A9F7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		D8C84F7518FA480C00305F01 = {
 			isa = PBXGroup;
 			children = (
 				D8C84F8318FA480C00305F01 /* PinoccioSDK */,
 				D8C84F9718FA480C00305F01 /* PinoccioSDKTests */,
+				D87A56CD190A154E00D6A9F7 /* PinoccioSDKExampleApp */,
+				D87A56EB190A154E00D6A9F7 /* PinoccioSDKExampleAppTests */,
 				D8C84F8018FA480C00305F01 /* Frameworks */,
 				D8C84F7F18FA480C00305F01 /* Products */,
 			);
@@ -110,6 +229,8 @@
 			children = (
 				D8C84F7E18FA480C00305F01 /* libPinoccioSDK.a */,
 				D8C84F8E18FA480C00305F01 /* PinoccioSDKTests.xctest */,
+				D87A56C8190A154D00D6A9F7 /* PinoccioSDKExampleApp.app */,
+				D87A56E5190A154E00D6A9F7 /* PinoccioSDKExampleAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,6 +241,7 @@
 				D8C84F8118FA480C00305F01 /* Foundation.framework */,
 				D8C84F8F18FA480C00305F01 /* XCTest.framework */,
 				D8C84F9218FA480C00305F01 /* UIKit.framework */,
+				D87A56CA190A154E00D6A9F7 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -165,6 +287,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D87A56C7190A154D00D6A9F7 /* PinoccioSDKExampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D87A56F3190A154E00D6A9F7 /* Build configuration list for PBXNativeTarget "PinoccioSDKExampleApp" */;
+			buildPhases = (
+				D87A56C4190A154D00D6A9F7 /* Sources */,
+				D87A56C5190A154D00D6A9F7 /* Frameworks */,
+				D87A56C6190A154D00D6A9F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PinoccioSDKExampleApp;
+			productName = PinoccioSDKExampleApp;
+			productReference = D87A56C8190A154D00D6A9F7 /* PinoccioSDKExampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D87A56E4190A154E00D6A9F7 /* PinoccioSDKExampleAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D87A56F6190A154E00D6A9F7 /* Build configuration list for PBXNativeTarget "PinoccioSDKExampleAppTests" */;
+			buildPhases = (
+				D87A56E1190A154E00D6A9F7 /* Sources */,
+				D87A56E2190A154E00D6A9F7 /* Frameworks */,
+				D87A56E3190A154E00D6A9F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D87A56EA190A154E00D6A9F7 /* PBXTargetDependency */,
+			);
+			name = PinoccioSDKExampleAppTests;
+			productName = PinoccioSDKExampleAppTests;
+			productReference = D87A56E5190A154E00D6A9F7 /* PinoccioSDKExampleAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D8C84F7D18FA480C00305F01 /* PinoccioSDK */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8C84FA118FA480C00305F01 /* Build configuration list for PBXNativeTarget "PinoccioSDK" */;
@@ -208,6 +365,14 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Big Robot Studios, LLC";
+				TargetAttributes = {
+					D87A56E4190A154E00D6A9F7 = {
+						TestTargetID = D87A56C7190A154D00D6A9F7;
+					};
+					D8C84F8D18FA480C00305F01 = {
+						TestTargetID = D87A56C7190A154D00D6A9F7;
+					};
+				};
 			};
 			buildConfigurationList = D8C84F7918FA480C00305F01 /* Build configuration list for PBXProject "PinoccioSDK" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -215,6 +380,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = D8C84F7518FA480C00305F01;
 			productRefGroup = D8C84F7F18FA480C00305F01 /* Products */;
@@ -224,11 +390,31 @@
 				D8C84F7D18FA480C00305F01 /* PinoccioSDK */,
 				D8C84F8D18FA480C00305F01 /* PinoccioSDKTests */,
 				D8C84FA718FA5F0100305F01 /* PinoccioSDKUniversal */,
+				D87A56C7190A154D00D6A9F7 /* PinoccioSDKExampleApp */,
+				D87A56E4190A154E00D6A9F7 /* PinoccioSDKExampleAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D87A56C6190A154D00D6A9F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D87A56E0190A154E00D6A9F7 /* Images.xcassets in Resources */,
+				D87A56D2190A154E00D6A9F7 /* InfoPlist.strings in Resources */,
+				D87A56DB190A154E00D6A9F7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D87A56E3190A154E00D6A9F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D87A56F0190A154E00D6A9F7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D8C84F8C18FA480C00305F01 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +442,29 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D87A56C4190A154D00D6A9F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D87A56F9190C0AD200D6A9F7 /* PinoccioSDK.h in Sources */,
+				D87A56FA190C0AD200D6A9F7 /* PinoccioSDK.m in Sources */,
+				D87A5700190C4CEC00D6A9F7 /* ScoutsTableViewController.m in Sources */,
+				D87A56D8190A154E00D6A9F7 /* BRSAppDelegate.m in Sources */,
+				D87A56DE190A154E00D6A9F7 /* BRSViewController.m in Sources */,
+				D87A5703190C8C1700D6A9F7 /* ScoutViewController.m in Sources */,
+				D87A56FD190C35B700D6A9F7 /* TroopsTableViewController.m in Sources */,
+				D87A56D4190A154E00D6A9F7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D87A56E1190A154E00D6A9F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D87A56F2190A154E00D6A9F7 /* PinoccioSDKExampleAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D8C84F7A18FA480C00305F01 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -276,6 +485,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D87A56EA190A154E00D6A9F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D87A56C7190A154D00D6A9F7 /* PinoccioSDKExampleApp */;
+			targetProxy = D87A56E9190A154E00D6A9F7 /* PBXContainerItemProxy */;
+		};
 		D8C84F9518FA480C00305F01 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D8C84F7D18FA480C00305F01 /* PinoccioSDK */;
@@ -284,6 +498,30 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		D87A56D0190A154E00D6A9F7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D87A56D1190A154E00D6A9F7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D87A56D9190A154E00D6A9F7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D87A56DA190A154E00D6A9F7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D87A56EE190A154E00D6A9F7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D87A56EF190A154E00D6A9F7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		D8C84F9A18FA480C00305F01 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -295,6 +533,86 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D87A56F4190A154E00D6A9F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PinoccioSDKExampleApp/PinoccioSDKExampleApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PinoccioSDKExampleApp/PinoccioSDKExampleApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D87A56F5190A154E00D6A9F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PinoccioSDKExampleApp/PinoccioSDKExampleApp-Prefix.pch";
+				INFOPLIST_FILE = "PinoccioSDKExampleApp/PinoccioSDKExampleApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D87A56F7190A154E00D6A9F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PinoccioSDKExampleApp.app/PinoccioSDKExampleApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PinoccioSDKExampleApp/PinoccioSDKExampleApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PinoccioSDKExampleAppTests/PinoccioSDKExampleAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D87A56F8190A154E00D6A9F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PinoccioSDKExampleApp.app/PinoccioSDKExampleApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PinoccioSDKExampleApp/PinoccioSDKExampleApp-Prefix.pch";
+				INFOPLIST_FILE = "PinoccioSDKExampleAppTests/PinoccioSDKExampleAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		D8C84F9F18FA480C00305F01 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -390,6 +708,7 @@
 		D8C84FA518FA480C00305F01 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PinoccioSDKExampleApp.app/PinoccioSDKExampleApp";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -403,6 +722,7 @@
 				);
 				INFOPLIST_FILE = "PinoccioSDKTests/PinoccioSDKTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -410,6 +730,7 @@
 		D8C84FA618FA480C00305F01 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PinoccioSDKExampleApp.app/PinoccioSDKExampleApp";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -419,6 +740,7 @@
 				GCC_PREFIX_HEADER = "PinoccioSDK/PinoccioSDK-Prefix.pch";
 				INFOPLIST_FILE = "PinoccioSDKTests/PinoccioSDKTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -440,6 +762,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D87A56F3190A154E00D6A9F7 /* Build configuration list for PBXNativeTarget "PinoccioSDKExampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D87A56F4190A154E00D6A9F7 /* Debug */,
+				D87A56F5190A154E00D6A9F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D87A56F6190A154E00D6A9F7 /* Build configuration list for PBXNativeTarget "PinoccioSDKExampleAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D87A56F7190A154E00D6A9F7 /* Debug */,
+				D87A56F8190A154E00D6A9F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		D8C84F7918FA480C00305F01 /* Build configuration list for PBXProject "PinoccioSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

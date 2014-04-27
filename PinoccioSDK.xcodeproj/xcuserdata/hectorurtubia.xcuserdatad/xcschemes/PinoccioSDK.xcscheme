@@ -38,6 +38,16 @@
                ReferencedContainer = "container:PinoccioSDK.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D87A56E4190A154E00D6A9F7"
+               BuildableName = "PinoccioSDKExampleAppTests.xctest"
+               BlueprintName = "PinoccioSDKExampleAppTests"
+               ReferencedContainer = "container:PinoccioSDK.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

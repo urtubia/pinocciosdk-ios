@@ -24,12 +24,12 @@
 - (void)setUp
 {
     [super setUp];
-    _validEmail = @"ENTER_VALID_EMAIL";
-    _validPassword = @"ENTER_VALID_PASSWORD";
+    _validEmail = @"urtubia@gmail.com";
+    _validPassword = @"pgomez72o";
     _invalidEmail = @"test@tester.com";
     _invalidPassword = @"asdfasdfsadfasdf";
-    _validTroopName = @"ENTER_VALID_TROOP_NAME";
-    _validScoutName = @"ENTER_VALID_CONNECTED_SCOUT_NAME";
+    _validTroopName = @"BigRobots";
+    _validScoutName = @"BiggerRobot";
 }
 
 - (void)tearDown
@@ -178,5 +178,32 @@
     [self waitForTimeout:60];
 }
 
+-(void) blinkAllScouts
+{
+    NSString *hqEmail = @"email@email.com";
+    NSString *hqPassword = @"password";
+    [PinoccioSDK login:hqEmail password:hqPassword response:^(PinoccioSDK *pinoccioSdk) {
+        if(pinoccioSdk != nil){
+            [pinoccioSdk getTroops:^(NSArray *troops) {
+                for(NSDictionary *troop in troops){
+                    NSLog(@"%@", troop[@"name"]);
+                    NSString *troop_id = troop[@"id"];
+                    [pinoccioSdk getScoutsInTroop:troop_id scoutsPredicate:^(NSArray *scouts) {
+                        for(NSDictionary *scout in scouts){
+                            NSLog(@"--- %@", scout[@"name"]);
+                            NSString *scout_id = scout[@"id"];
+                            [pinoccioSdk runBitlashCommand:troop_id scoutId:scout_id command:@"led.blink(0,0,255,1000)" responsePredicate:^(NSDictionary *response) {}];
+                            
+                        };
+                    }];
+                    
+                }
+                
+            }];
+        }else{
+            NSLog(@"Login failed");
+        }
+    }];
+}
 
 @end
