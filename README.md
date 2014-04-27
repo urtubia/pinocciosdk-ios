@@ -42,6 +42,12 @@ The following is a method that will make all your scouts on all your troops blin
         }];
     }
 
+## Sample Application
+The Xcode project also includes a sample application that consumes the sdk. To run it, select the "PinoccioExampleApp" target from the IDE. The sources for the sample app are under the `PinoccioSDKExampleApp` directory.
+The following is a demo capture of the sample app:
+
+![gid demo](https://raw.githubusercontent.com/urtubia/pinocciosdk-ios/master/sampleapp-demo.gif)
+
 ### Considerations
 * All methods do their work asynchronously. Expect the receiver blocks on used on most calls to be returned on a different thread.
 * I'm still working on implementing more functionality from the api at https://docs.pinocc.io/api.html Stay tuned.
