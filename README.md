@@ -49,6 +49,6 @@ The following is a demo capture of the sample app:
 ![gid demo](https://raw.githubusercontent.com/urtubia/pinocciosdk-ios/master/sampleapp-demo.gif)
 
 ### Considerations
-* All methods do their work asynchronously. Expect the receiver blocks on used on most calls to be returned on a different thread.
+* All methods do their work asynchronously. Expect the receiver blocks to be executed on a different thread.
 * I'm still working on implementing more functionality from the api at https://docs.pinocc.io/api.html Stay tuned.
 * The functional test on this project will work only if you configure it with your hq username, password, troop and scout's name.
